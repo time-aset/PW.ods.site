@@ -126,12 +126,11 @@ main {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    width: 100%;
-    max-width: 600px;
+    width: min(90vw, 760px);
+    max-width: 760px;
     position: relative;
     z-index: 3;
-    margin-top: -30px;
-    margin-bottom: 20px;
+    margin: -30px auto 20px;
 }
 
 .form-box h2 {
