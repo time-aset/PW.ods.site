@@ -3,16 +3,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', 'Roboto', sans-serif;
 }
 
+
+
 body {
-    background-color: #cbf0f5;
+    background-color: #d9eaffd5;
 }
 
 
 header {
-   
+    
     background-color:#055f94; 
     color: #2849da;
     height: 115px;
@@ -27,13 +28,13 @@ header {
 }
 
 nav {
-
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: left;
     width: 100%;
-    padding: 11px 10px;
+    padding: 10px 10px;
     gap: 15px;
     background-color:#44a1d6;
     box-sizing: border-box;
@@ -42,13 +43,20 @@ nav {
 
 
 #menu a {
+    margin: 0 20px;
     text-decoration: rgb(253, 253, 253);
     color: #000000;
-    margin-left: 20px;
     font-size: 20px;
     font-weight: 500;
     color:#d3efff;
     padding: 5px 5px;
+    
+}
+
+.separador{
+    
+    color: #d3efff;
+    font-size: 25px;
     
 }
 
@@ -65,15 +73,17 @@ nav {
 
 .head-baby{
   
-    background-color:#055f94; 
+    background-color: #b0d5ff;
     color: #2849da;
-    height: 115px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    position: relative;
+    
 
 }
 
@@ -87,6 +97,9 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    
 }
 
 #footer-text {
@@ -100,10 +113,12 @@ footer {
 main {
     min-height: calc(100vh - 220px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px 80px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 .form-box {
@@ -113,6 +128,10 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     width: 100%;
     max-width: 600px;
+    position: relative;
+    z-index: 3;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 .form-box h2 {
@@ -191,14 +210,14 @@ main {
 
 .thead{
     text-align: center;
-    font-family: fonte-lis;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #4badee;
     background-color: #52E5E7;
 }
 
 .tbody{
-    font-family: fonte-lis;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: #555 ;
 }        
