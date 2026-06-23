@@ -15,19 +15,19 @@
 
     </header>
 
-    <div class="faixa-branca"></div>
+    
 
     <nav id="menu">
-        <a href="">Inicio</a>
-        <a href="">Ods</a>
-        <a href="doar.html">Doar</a>
-        <a href="doacoes.html">Doações</a>
+        <a href="">Inicio</a>|
+        <a href="">Ods</a>|
+        <a href="doar.html">Doar</a>|
+        <a href="doacoes.html">Doações</a>|
     </nav>
 
     <main>
         <div class="form-box">
             <h2>Fale conosco</h2>
-            <form>
+            <form class="meuFormulario">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome">
 
@@ -55,19 +55,5 @@
 
     </footer>
 </body>
-    <script>
-        function enviar(){
-            let nome = document.getElementById('nome').value
-            let email = document.getElementById('email').value
-            let mensagem = document.getElementById('mensagem').value
-            let doacao = document.getElementById('doacao').value
-
-            sessionStorage.getItem('nome', nome)
-            sessionStorage.getItem('email', email)
-            sessionStorage.getItem('mensagem', mensagem)
-            sessionStorage.getItem('doacao', doacao)
-       
-            window.location.href = 'doacoes.html'
-        }
-    </script>
+  
 </html>
