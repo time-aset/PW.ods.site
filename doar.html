@@ -46,16 +46,28 @@
                     <label><input type="radio" name="apresentar_doacao" value="nao"> Não</label>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button onclick="enviar()" >Enviar</button>
             </form>
         </div>
     </main>
-
-
     <footer>
         <p id="footer-text"> &copy; 2026 SiteODS - Todos os direitos reservados.</p>
 
     </footer>
 </body>
+    <script>
+        function enviar(){
+            let nome = document.getElementById('nome').value
+            let email = document.getElementById('email').value
+            let mensagem = document.getElementById('mensagem').value
+            let doacao = document.getElementById('doacao').value
 
+            sessionStorage.getItem('nome', nome)
+            sessionStorage.getItem('email', email)
+            sessionStorage.getItem('mensagem', mensagem)
+            sessionStorage.getItem('doacao', doacao)
+       
+            window.location.href = 'doacoes.html'
+        }
+    </script>
 </html>
