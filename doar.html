@@ -11,43 +11,49 @@
 <body>
     <header>
 
-        <p id="titulo1"> Água e Saneamento</p>
+        <p id="titulo1"> ÁGUA E SANEAMENTO</p>
 
     </header>
 
-    
+
 
     <nav id="menu">
-        <a href="">Inicio</a>|
-        <a href="">Ods</a>|
-        <a href="doar.html">Doar</a>|
-        <a href="doacoes.html">Doações</a>|
+        <a href="index.html">Inicio</a><span class="separador">|</span>
+        <a href="">Ods</a><span class="separador">|</span>
+        <a href="doar.html">Doar</a><span class="separador">|</span>
+        <a href="doacoes.html">Doação</a><span class="separador">|</span>
     </nav>
 
+    <div class="container">
+        <container class="head-baby"></container>
+    </div>
+
     <main>
-        <div class="form-box">
-            <h2>Fale conosco</h2>
-            <form class="meuFormulario">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <div class="container">
+            <div class="form-box">
+                <h2>Fale conosco</h2>
+                <form class="meuFormulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="seu@exemplo.com">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@exemplo.com">
 
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
 
-                <label for="doacao">Doação</label>
-                <input type="number" id="doacao" name="doacao" placeholder="Digite o quanto deseja doar">
+                    <label for="doacao">Doação</label>
+                    <input type="number" id="doacao" name="doacao" placeholder="Digite o quanto deseja doar">
 
-                <div class="radio-group">
-                    <p>Deseja apresentar a doação?</p>
-                    <label><input type="radio" name="apresentar_doacao" value="sim" checked> Sim</label>
-                    <label><input type="radio" name="apresentar_doacao" value="nao"> Não</label>
-                </div>
+                    <div class="radio-group">
+                        <p>Deseja apresentar a doação?</p>
+                        <label><input type="radio" name="apresentar_doacao" value="sim" checked> Sim</label>
+                        <label><input type="radio" name="apresentar_doacao" value="nao"> Não</label>
+                    </div>
 
-                <button onclick="enviar()" >Enviar</button>
-            </form>
+                    <button onclick="enviar()">Enviar</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer>
@@ -55,5 +61,5 @@
 
     </footer>
 </body>
-  
+
 </html>
