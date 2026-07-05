@@ -140,7 +140,7 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     width: min(90vw, 630px);
     max-width: 630px;
-    position: absolute;
+    position: relative;
     /* remove do fluxo e sobrepõe sem empurrar footer */
     z-index: 3;
     left: 50%;
@@ -206,21 +206,24 @@ footer {
     font-weight: 500;
 }
 
-/* --Giovana-- */
 
-.bloco {
-    background-color: #6ecaf1;
-    align-items: center;
-    text-align: center;
-    padding: 5px 5px;
+.table-box {
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 445px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    width: min(90vw, 630px);
+    max-width: 630px;
+    position:relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    /* ajuste a distância vertical conforme necessário */
+    margin-bottom: 20px;
 }
+
+
 
 section {
     background-color: white;
@@ -232,6 +235,7 @@ section {
 
 h2 {
     color: #0077b6;
+    text-align: center;
 }
 
 table {
@@ -241,8 +245,9 @@ table {
 }
 
 th {
-    background-color: #00a8e8;
-    color: white;
+    background-color: #0077b6;
+    color: #d3efff;
+    font-size: 19px;
 }
 
 th,
@@ -270,6 +275,179 @@ tr:hover {
     display: table;
     margin: 10 70;
     width: auto;
+
+}
+
+.textoSite p {
+    margin-bottom: 8px;
+}
+
+
+--inicio-- 
+.home-main {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2c3e50;
+    background-color: #f8fafc;
+
+}
+
+/* Container para limitar a largura e centralizar o conteúdo */
+.home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* SEÇÃO 1: HERO / MANIFESTO */
+.home-hero {
+    background: linear-gradient(135deg, #1f77b4 0%, #0d47a1 100%);
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.home-hero h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.manifesto-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    max-width: 950px;
+    margin: 60px;
+    text-align: left;
+}
+
+.manifesto-box h2 {
+    font-size: 2.0rem;
+    color: #e3f2fd;
+    margin-bottom: 15px;
+    
+ 
+}
+
+/* SEÇÃO 2: PILARES (GRID DE CARDS) */
+.home-pilares {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #0d47a1;
+}
+
+.pilares-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.pilar-card {
+    flex: 1;
+    background: #f4f7f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid #1f77b4;
+    transition: transform 0.2s;
+}
+
+.pilar-card:hover {
+    transform: translateY(-5px);
+}
+
+.pilar-card .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* SEÇÃO 3: DOAÇÕES */
+.home-doacoes {
+    padding: 60px 0;
+    background-color: #e3f2fd;
+}
+
+.doacoes-box {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.doacoes-box h2 {
+    color: #0d47a1;
+}
+
+.btn-doar {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+    transition: background 0.2s;
+}
+
+.btn-doar:hover {
+    background-color: #e65100;
+}
+
+/* SEÇÃO 4: CTA FINAL */
+.home-cta-final {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.home-cta-final h2 {
+    color: #c0392b; /* Vermelho/alerta sutil para a crise */
+}
+
+.home-cta-final p {
+    max-width: 750px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.bottom-action {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 40px;
+}
+
+.btn-explorar {
+    display: inline-block;
+    background-color: #1f77b4;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+
+.btn-explorar:hover {
+    background-color: #0d47a1;
+}
+
+/* RESPONSIVIDADE (Para Celulares) */
+@media (max-width: 768px) {
+    .pilares-grid {
+        flex-direction: column;
+    }
+    .home-hero h1 {
+        font-size: 1.8rem;
+    }
 }
 
 
