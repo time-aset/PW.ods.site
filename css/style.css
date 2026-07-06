@@ -283,6 +283,46 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     top: 0 ;
 }
 
+.popup-doar {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-conteudo-doar {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    width: 90%;
+}
+
+.popup-conteudo-doar h3 {
+    color: #055f94;
+    margin-bottom: 8px;
+}
+
+.popup-conteudo-doar p {
+    color: #35607d;
+    margin-bottom: 14px;
+}
+
+.popup-conteudo-doar button {
+    background: linear-gradient(90deg, #0b7fcc 0%, #1da4ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
 @media (max-width: 768px) {
     .hero-doar {
         padding: 20px;
