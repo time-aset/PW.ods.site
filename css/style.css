@@ -4,7 +4,6 @@
 }
 
 
-
 body {
     background-color: #d9eaffd5;
     display: flex;
@@ -31,13 +30,6 @@ header {
     background-size: cover;
     background-position: center;
 
-}
-
-.icon {
-    width: 20px;
-    height: 20px;sss
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 nav {
@@ -248,7 +240,6 @@ button.button-doar {
     opacity: 0.95;
 }
 
-<<<<<<< HEAD
 .error-msg-doar {
     color: #c0392b;
     font-size: 0.9rem;
@@ -261,11 +252,6 @@ button.button-doar {
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12) !important;
 }
 
-=======
-p{
-    margin-bottom: 8px;
-}
->>>>>>> 48dc59b8a7a08e58e323221b61c9247c993a1782
 /* Radios de apresentar doação */
 .radio-group-doar {
     margin-top: 10px;
@@ -359,39 +345,12 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     }
 }
 
-.container-paises {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-  width: 100%; 
-}
-
-.lado-esquerdo {
-  flex: 1;                        
-  max-width: 60%; 
-}
-
-.tabela-paises {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  flex: 0 0 35%; 
-  max-width: 35%; 
-  position: relative;
-  z-index: 3;
-  top: -30px; 
-  margin-bottom: 20px;
-}
-
 
 .table-box {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    flex: 0 0 auto;
     width: min(90vw, 630px);
     max-width: 630px;
     position:relative;
@@ -399,7 +358,7 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-
+    /* ajuste a distância vertical conforme necessário */
     margin-bottom: 20px;
 }
 
@@ -413,15 +372,9 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.img-section{
-    
-max-width: fit-content;
-
-}
 h2 {
     color: #0077b6;
     text-align: center;
-    margin-bottom: 15px;
 }
 
 table {
@@ -453,13 +406,13 @@ tr:hover {
 
 .tabelaSite {
     display: table;
-    margin: 10;
+    margin: 10px 35px 0px ;
     width: auto;
 }
 
 .textoSite {
     display: flex;
-    margin: 10 70;
+    margin: 10px 35px 0px;
     width: auto;
 }
 
@@ -470,7 +423,8 @@ tr:hover {
 
 --inicio-- 
 .home-main {
-   color: #2c3e50;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2c3e50;
     background-color: #f8fafc;
 
 }
@@ -653,8 +607,8 @@ tr:hover {
 
 /* SEÇÃO 1: HERO / MANIFESTO */
 .home-hero {
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-    color: #0d47a1;
+    background: linear-gradient(135deg, #1f77b4 0%, #0d47a1 100%);
+    color: #ffffff;
     padding: 60px 0;
     text-align: center;
 }
@@ -677,7 +631,7 @@ tr:hover {
 
 .manifesto-box h2 {
     font-size: 2.0rem;
-    color: #0d47a1;
+    color: #e3f2fd;
     margin-bottom: 15px;
 }
 
