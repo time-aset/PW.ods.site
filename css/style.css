@@ -32,6 +32,13 @@ header {
 
 }
 
+.icon {
+    width: 20px;
+    height: 20px;sss
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 nav {
     text-align: left;
     display: flex;
@@ -238,6 +245,18 @@ button.button-doar {
 
 .button-doar:hover {
     opacity: 0.95;
+}
+
+.error-msg-doar {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+    min-height: 1.1rem;
+}
+
+.input-error-doar {
+    border-color: #c0392b !important;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12) !important;
 }
 
 /* Radios de apresentar doação */

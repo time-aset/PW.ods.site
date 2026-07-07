@@ -13,6 +13,7 @@
 
         <p id="titulo1"> ÁGUA E SANEAMENTO</p>
 
+        <img src="/img/aguaicon.png" alt="icone" id="icon" width="160" height="90">
     </header>
 
 
@@ -23,6 +24,7 @@
         <a href="paises.html">Países</a><span class="separador">|</span>
         <a href="doar.html">Doar</a><span class="separador">|</span>
     </nav>
+
 
     <div class="container">
         <container class="head-baby"></container>
@@ -37,13 +39,15 @@
                     <input type="text" id="nome" name="nome" placeholder="Seu nome">
 
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="seu@exemplo.com">
+                    <input type="text" id="email" name="email" placeholder="seu@exemplo.com" oninput="limparErro('emailErro')">
+                    <p class="error-msg-doar" id="emailErro"></p>
 
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
 
                     <label for="doacao">Doação</label>
-                    <input type="number" id="doacao" name="doacao" placeholder="Digite o quanto deseja doar">
+                    <input type="number" id="doacao" name="doacao" placeholder="Digite o quanto deseja doar" oninput="limparErro('doacaoErro')">
+                    <p class="error-msg-doar" id="doacaoErro"></p>
 
                     <div class="radio-group-doar">
                         <p>Deseja apresentar a doação?</p>
@@ -75,22 +79,50 @@
             const mensagem = document.getElementById('mensagem').value.trim();
             const doacao = document.getElementById('doacao').value.trim();
 
-            if (!nome || !email || !mensagem || !doacao) {
-                mostrarPopup('ERRO', 'Preencha todos os campos antes de enviar.');
-                return;
+            limparErros();
+
+            let valido = true;
+
+            if (!nome) {
+                mostrarPopup('Erro', 'Informe seu nome.');
+                valido = false;
             }
 
-            if (!email.includes('@') || !email.includes('.')) {
-                mostrarPopup('ERRO', 'Informe um e-mail válido.');
-                return;
+            if (!mensagem) {
+                mostrarPopup('Erro', 'Escreva uma mensagem.');
+                valido = false;
             }
 
-            if (Number(doacao) <= 0) {
-                mostrarPopup('ERRO', 'A doação precisa ser maior que zero.');
+            if (!email) {
+                mostrarErro('emailErro', 'Informe seu e-mail.');
+                valido = false;
+            } else if (!email.includes('@') || !email.includes('.')) {
+                mostrarErro('emailErro', 'Informe um e-mail válido.');
+                valido = false;
+            }
+
+            if (!doacao) {
+                mostrarErro('doacaoErro', 'Informe o valor da doação.');
+                valido = false;
+            } else if (Number(doacao) <= 0) {
+                mostrarErro('doacaoErro', 'A doação precisa ser maior que zero.');
+                valido = false;
+            }
+
+            if (!valido) {
                 return;
             }
 
             mostrarPopup('Obrigado!', 'Sua doação foi registrada com sucesso.');
+        }
+
+        function mostrarErro(id, mensagem) {
+            document.getElementById(id).textContent = mensagem;
+        }
+
+        function limparErros() {
+            document.getElementById('emailErro').textContent = '';
+            document.getElementById('doacaoErro').textContent = '';
         }
 
         function mostrarPopup(titulo, mensagem) {
