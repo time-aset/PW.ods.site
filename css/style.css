@@ -241,9 +241,18 @@ button.button-doar {
     opacity: 0.95;
 }
 
-p{
-    margin-bottom: 8px;
+.error-msg-doar {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+    min-height: 1.1rem;
 }
+
+.input-error-doar {
+    border-color: #c0392b !important;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12) !important;
+}
+
 /* Radios de apresentar doação */
 .radio-group-doar {
     margin-top: 10px;
@@ -368,7 +377,6 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    flex: 0 0 auto;
     width: min(90vw, 630px);
     max-width: 630px;
     position:relative;
@@ -412,6 +420,17 @@ th {
     color: #d3efff;
     font-size: 19px;
 }
+.error-msg-doar {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin: 4px 0 0;
+    min-height: 1.1rem;
+}
+
+.input-error-doar {
+    border-color: #c0392b !important;
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12) !important;
+}
 
 th,
 td {
@@ -430,13 +449,13 @@ tr:hover {
 
 .tabelaSite {
     display: table;
-    margin: 10;
+    margin: 10px 35px 0px ;
     width: auto;
 }
 
 .textoSite {
     display: flex;
-    margin: 10 70;
+    margin: 10px 35px 0px;
     width: auto;
 }
 
@@ -447,7 +466,7 @@ tr:hover {
 
 --inicio-- 
 .home-main {
-   color: #2c3e50;
+    color: #2c3e50;
     background-color: #f8fafc;
 
 }
@@ -462,7 +481,7 @@ tr:hover {
 /* SEÇÃO 1: HERO / MANIFESTO */
 .home-hero {
     background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-    color: #e3f2fd;
+    color: #0d47a1;
     padding: 60px 0;
     text-align: center;
 }
