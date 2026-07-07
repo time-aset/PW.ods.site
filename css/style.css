@@ -4,6 +4,7 @@
 }
 
 
+
 body {
     background-color: #d9eaffd5;
     display: flex;
@@ -240,6 +241,9 @@ button.button-doar {
     opacity: 0.95;
 }
 
+p{
+    margin-bottom: 8px;
+}
 /* Radios de apresentar doação */
 .radio-group-doar {
     margin-top: 10px;
@@ -333,7 +337,31 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     }
 }
 
+.container-paises {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%; 
+}
 
+.lado-esquerdo {
+  flex: 1;                        
+  max-width: 60%; 
+}
+
+.tabela-paises {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  flex: 0 0 35%; 
+  max-width: 35%; 
+  position: relative;
+  z-index: 3;
+  top: -30px; 
+  margin-bottom: 20px;
+}
 
 
 .table-box {
@@ -341,6 +369,7 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    flex: 0 0 auto;
     width: min(90vw, 630px);
     max-width: 630px;
     position:relative;
@@ -348,7 +377,7 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-    /* ajuste a distância vertical conforme necessário */
+
     margin-bottom: 20px;
 }
 
@@ -362,9 +391,15 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.img-section{
+    
+max-width: fit-content;
+
+}
 h2 {
     color: #0077b6;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 table {
