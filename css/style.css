@@ -4,6 +4,7 @@
 }
 
 
+
 body {
     background-color: #d9eaffd5;
     display: flex;
@@ -240,18 +241,9 @@ button.button-doar {
     opacity: 0.95;
 }
 
-.error-msg-doar {
-    color: #c0392b;
-    font-size: 0.9rem;
-    margin: 4px 0 0;
-    min-height: 1.1rem;
+p{
+    margin-bottom: 8px;
 }
-
-.input-error-doar {
-    border-color: #c0392b !important;
-    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12) !important;
-}
-
 /* Radios de apresentar doação */
 .radio-group-doar {
     margin-top: 10px;
@@ -345,12 +337,39 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     }
 }
 
+.container-paises {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%; 
+}
+
+.lado-esquerdo {
+  flex: 1;                        
+  max-width: 60%; 
+}
+
+.tabela-paises {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  flex: 0 0 35%; 
+  max-width: 35%; 
+  position: relative;
+  z-index: 3;
+  top: -30px; 
+  margin-bottom: 20px;
+}
+
 
 .table-box {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    flex: 0 0 auto;
     width: min(90vw, 630px);
     max-width: 630px;
     position:relative;
@@ -358,7 +377,7 @@ form.meuFormulario-doar .radio-group-doar input[type="radio"] {
     left: 50%;
     transform: translateX(-50%);
     top: -30px;
-    /* ajuste a distância vertical conforme necessário */
+
     margin-bottom: 20px;
 }
 
@@ -372,9 +391,15 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.img-section{
+    
+max-width: fit-content;
+
+}
 h2 {
     color: #0077b6;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 table {
@@ -406,13 +431,13 @@ tr:hover {
 
 .tabelaSite {
     display: table;
-    margin: 10px 35px 0px ;
+    margin: 10;
     width: auto;
 }
 
 .textoSite {
     display: flex;
-    margin: 10px 35px 0px;
+    margin: 10 70;
     width: auto;
 }
 
@@ -423,8 +448,7 @@ tr:hover {
 
 --inicio-- 
 .home-main {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #2c3e50;
+   color: #2c3e50;
     background-color: #f8fafc;
 
 }
@@ -607,8 +631,8 @@ tr:hover {
 
 /* SEÇÃO 1: HERO / MANIFESTO */
 .home-hero {
-    background: linear-gradient(135deg, #1f77b4 0%, #0d47a1 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    color: #0d47a1;
     padding: 60px 0;
     text-align: center;
 }
@@ -631,7 +655,7 @@ tr:hover {
 
 .manifesto-box h2 {
     font-size: 2.0rem;
-    color: #e3f2fd;
+    color: #0d47a1;
     margin-bottom: 15px;
 }
 
